@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CoFAS_MES.POP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dbmes</Value>
+    </Setting>
+    <Setting Name="DB_TYPE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MySql</Value>
+    </Setting>
+    <Setting Name="MULTI_LANGUAGE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">日本</Value>
+    </Setting>
+    <Setting Name="FONT_TYPE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Meiryo UI</Value>
+    </Setting>
+    <Setting Name="FONT_SIZE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="FTP_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftpadmin</Value>
+    </Setting>
+    <Setting Name="WORKSHOP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WS001</Value>
+    </Setting>
+    <Setting Name="USER_ID_SAVE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Y</Value>
+    </Setting>
+    <Setting Name="PROCESS_POP" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CORP_CODE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9999999999</Value>
+    </Setting>
+    <Setting Name="SERVER_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">owell.coever.co.kr</Value>
+    </Setting>
+    <Setting Name="FTP_SERVER_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">owell.coever.co.kr</Value>
+    </Setting>
+    <Setting Name="DB_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">coever_mes_owell_v10_real</Value>
+    </Setting>
+    <Setting Name="FTP_SERVER_PORT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">8500</Value>
+    </Setting>
+    <Setting Name="USER_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">User ID</Value>
+    </Setting>
+    <Setting Name="RESOURCE_CODE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RS0011</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

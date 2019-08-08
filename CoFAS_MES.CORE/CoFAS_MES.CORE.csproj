@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{667C384E-14B0-4C27-A4AB-22E1DD9D0E41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoFAS_MES.CORE</RootNamespace>
+    <AssemblyName>CoFAS_MES.CORE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <HintPath>C:\Program Files (x86)\DevExpress 17.2\Components\Bin\Framework\DevExpress.Charts.v17.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpellChecker.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\CoFAS_MES\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\CoFAS_MES\Dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseControls\IBaseControls.cs" />
+    <Compile Include="BaseControls\ucButtonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucButtonEdit.Designer.cs">
+      <DependentUpon>ucButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucComboBox.Designer.cs">
+      <DependentUpon>ucComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit_Year_Month.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit_Year_Month.Designer.cs">
+      <DependentUpon>ucDateEdit_Year_Month.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit_Year.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit_Year.Designer.cs">
+      <DependentUpon>ucDateEdit_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucDateEdit.Designer.cs">
+      <DependentUpon>ucDateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucFromToDateEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucFromToDateEdit.Designer.cs">
+      <DependentUpon>ucFromToDateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucImageOpenButtonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucImageOpenButtonEdit.Designer.cs">
+      <DependentUpon>ucImageOpenButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucImageOpenDeleteButtonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucImageOpenDeleteButtonEdit.Designer.cs">
+      <DependentUpon>ucImageOpenDeleteButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucLookUpEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucLookUpEdit.Designer.cs">
+      <DependentUpon>ucLookUpEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucMemoEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucMemoEdit.Designer.cs">
+      <DependentUpon>ucMemoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucOpenButtonEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucOpenButtonEdit.Designer.cs">
+      <DependentUpon>ucOpenButtonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucPictureEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucPictureEdit.Designer.cs">
+      <DependentUpon>ucPictureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucSearchEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucSearchEdit.Designer.cs">
+      <DependentUpon>ucSearchEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucSimpleButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucSimpleButton.Designer.cs">
+      <DependentUpon>ucSimpleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucSpinEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucSpinEdit.Designer.cs">
+      <DependentUpon>ucSpinEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucSplashScreenManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucSplashScreenManager.Designer.cs">
+      <DependentUpon>ucSplashScreenManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucSpreadSheetControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucSpreadSheetControl.Designer.cs">
+      <DependentUpon>ucSpreadSheetControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\ucTextEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ucTextEdit.Designer.cs">
+      <DependentUpon>ucTextEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseDesign.Designer.cs">
+      <DependentUpon>frmBaseDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseNone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseNone.Designer.cs">
+      <DependentUpon>frmBaseNone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmBasePOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmBasePOP.Designer.cs">
+      <DependentUpon>frmBasePOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseSingle.Designer.cs">
+      <DependentUpon>frmBaseSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseSingleNone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmBaseSingleNone.Designer.cs">
+      <DependentUpon>frmBaseSingleNone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForm\IForm.cs" />
+    <Compile Include="BaseForm\IMainForm.cs" />
+    <Compile Include="BaseForm\IPopUpForm.cs" />
+    <Compile Include="BaseForm\MainFormButtonSetting.cs" />
+    <Compile Include="BaseForm\frmWaitView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm\frmWaitView.Designer.cs">
+      <DependentUpon>frmWaitView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\MesSystemBusiness.cs" />
+    <Compile Include="Data\MesSystemProvider.cs" />
+    <Compile Include="Entity\EntityManager.cs" />
+    <Compile Include="Entity\MesSystemEntity.cs" />
+    <Compile Include="Function\CoFAS_AES256Encrypt.cs" />
+    <Compile Include="Function\CoFAS_ConfigurationManager.cs" />
+    <Compile Include="Function\CoFAS_ControlManager.cs" />
+    <Compile Include="Function\CoFAS_ConvertManager.cs" />
+    <Compile Include="Function\CoFAS_DBManager.cs" />
+    <Compile Include="Function\CoFAS_DevExpressManager.cs" />
+    <Compile Include="Function\CoFAS_DevGridManager.cs" />
+    <Compile Include="Function\CoFAS_ExceptionManager.cs" />
+    <Compile Include="Function\CoFAS_FileManager.cs" />
+    <Compile Include="Function\CoFAS_FTPManager.cs" />
+    <Compile Include="Function\CoFAS_Log.cs" />
+    <Compile Include="Function\CoFAS_Serial.cs" />
+    <Compile Include="Function\CoFAS_SocketClient.cs" />
+    <Compile Include="Function\CoFAS_SocketServer.cs" />
+    <Compile Include="Function\CoFAS_ThreadManager.cs" />
+    <Compile Include="Function\CoFAS_TreeListManager.cs" />
+    <Compile Include="Function\CoFAS_XML.cs" />
+    <Compile Include="Function\DS_DBClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucEquipmentInspectInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucEquipmentInspectInfoPopup.designer.cs">
+      <DependentUpon>ucEquipmentInspectInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_ResourceCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_ResourceCode.designer.cs">
+      <DependentUpon>ucCommonCodePopup_ResourceCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_StopCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_StopCode.designer.cs">
+      <DependentUpon>ucCommonCodePopup_StopCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_BadCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_BadCode.designer.cs">
+      <DependentUpon>ucCommonCodePopup_BadCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Tool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Tool.designer.cs">
+      <DependentUpon>ucCommonCodePopup_Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_ProcessGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_ProcessGroup.designer.cs">
+      <DependentUpon>ucCommonCodePopup_ProcessGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Terminal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Terminal.designer.cs">
+      <DependentUpon>ucCommonCodePopup_Terminal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Equipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup_Equipment.designer.cs">
+      <DependentUpon>ucCommonCodePopup_Equipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T03.designer.cs">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T05.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T05.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup_T05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodePopup.designer.cs">
+      <DependentUpon>ucVendCodePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPartCodePopup_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPartCodePopup_T02.Designer.cs">
+      <DependentUpon>ucPartCodePopup_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Clock.Designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Notice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Notice.Designer.cs">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialOrderInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialOrderInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucMaterialOrderInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup_T50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup_T50.Designer.cs">
+      <DependentUpon>ucPlanOrderinfoPopup_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup_T50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup_T50.Designer.cs">
+      <DependentUpon>ucProductPlanInfoPopup_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T02.designer.cs">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup_T01.designer.cs">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTabletBasedSensorInfoPopup.designer.cs">
+      <DependentUpon>ucTabletBasedSensorInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPartCodePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPartCodePopup.designer.cs">
+      <DependentUpon>ucPartCodePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCommonCodePopup.designer.cs">
+      <DependentUpon>ucCommonCodePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DashboardHomeWidgets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DashboardHomeWidgets.Designer.cs">
+      <DependentUpon>DashboardHomeWidgets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup.Designer.cs">
+      <DependentUpon>ucPlanOrderinfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T02.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T03.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucNoticeDetailPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNoticeDetailPopup.Designer.cs">
+      <DependentUpon>ucNoticeDetailPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucReversBOMInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucReversBOMInfoPopup.Designer.cs">
+      <DependentUpon>ucReversBOMInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T03.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T02.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T04.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T04.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T50.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup.Designer.cs">
+      <DependentUpon>ucProductPlanInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialOrderInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialOrderInfoPopup.Designer.cs">
+      <DependentUpon>ucMaterialOrderInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCodeInfoPopup.Designer.cs">
+      <DependentUpon>ucVendCodeInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendCostInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendCostInfoPopup.Designer.cs">
+      <DependentUpon>ucVendCostInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp.Designer.cs">
+      <DependentUpon>ucWorkResultPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.designer.cs">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmImageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmImageView.Designer.cs">
+      <DependentUpon>frmImageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmPageSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmPageSetting.Designer.cs">
+      <DependentUpon>frmPageSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmPdfView_DS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmPdfView_DS.Designer.cs">
+      <DependentUpon>frmPdfView_DS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmPdfView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmPdfView.Designer.cs">
+      <DependentUpon>frmPdfView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmSheetSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmSheetSetting.designer.cs">
+      <DependentUpon>frmSheetSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmVerifyPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmVerifyPermissions.Designer.cs">
+      <DependentUpon>frmVerifyPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmViewDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmViewDesign.Designer.cs">
+      <DependentUpon>frmViewDesign.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseControls\ucButtonEdit.resx">
+      <DependentUpon>ucButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucComboBox.resx">
+      <DependentUpon>ucComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucDateEdit_Year_Month.resx">
+      <DependentUpon>ucDateEdit_Year_Month.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucDateEdit_Year.resx">
+      <DependentUpon>ucDateEdit_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucDateEdit.resx">
+      <DependentUpon>ucDateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucFromToDateEdit.resx">
+      <DependentUpon>ucFromToDateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucImageOpenButtonEdit.resx">
+      <DependentUpon>ucImageOpenButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucImageOpenDeleteButtonEdit.resx">
+      <DependentUpon>ucImageOpenDeleteButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucLookUpEdit.resx">
+      <DependentUpon>ucLookUpEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucMemoEdit.resx">
+      <DependentUpon>ucMemoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucOpenButtonEdit.resx">
+      <DependentUpon>ucOpenButtonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucPictureEdit.resx">
+      <DependentUpon>ucPictureEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucSearchEdit.resx">
+      <DependentUpon>ucSearchEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucSimpleButton.resx">
+      <DependentUpon>ucSimpleButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucSpinEdit.resx">
+      <DependentUpon>ucSpinEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucSplashScreenManager.resx">
+      <DependentUpon>ucSplashScreenManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucSpreadSheetControl.resx">
+      <DependentUpon>ucSpreadSheetControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseControls\ucTextEdit.resx">
+      <DependentUpon>ucTextEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmBaseDesign.resx">
+      <DependentUpon>frmBaseDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmBaseNone.resx">
+      <DependentUpon>frmBaseNone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmBasePOP.resx">
+      <DependentUpon>frmBasePOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmBaseSingle.resx">
+      <DependentUpon>frmBaseSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmBaseSingleNone.resx">
+      <DependentUpon>frmBaseSingleNone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmWaitView.ko-KR.resx">
+      <DependentUpon>frmWaitView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForm\frmWaitView.resx">
+      <DependentUpon>frmWaitView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Language.en-US.resx" />
+    <EmbeddedResource Include="Resources\Language.ja-JP.resx" />
+    <EmbeddedResource Include="Resources\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Notice.resx">
+      <DependentUpon>Notice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucEquipmentInspectInfoPopup.resx">
+      <DependentUpon>ucEquipmentInspectInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_ResourceCode.resx">
+      <DependentUpon>ucCommonCodePopup_ResourceCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_StopCode.resx">
+      <DependentUpon>ucCommonCodePopup_StopCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_BadCode.resx">
+      <DependentUpon>ucCommonCodePopup_BadCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_Tool.resx">
+      <DependentUpon>ucCommonCodePopup_Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_ProcessGroup.resx">
+      <DependentUpon>ucCommonCodePopup_ProcessGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_Terminal.resx">
+      <DependentUpon>ucCommonCodePopup_Terminal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup_Equipment.resx">
+      <DependentUpon>ucCommonCodePopup_Equipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTabletBasedSensorInfoPopup_T03.resx">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup_T04.resx">
+      <DependentUpon>ucVendCodeInfoPopup_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup_T05.resx">
+      <DependentUpon>ucVendCodeInfoPopup_T05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodePopup.resx">
+      <DependentUpon>ucVendCodePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMaterialOrderInfoPopup_T01.resx">
+      <DependentUpon>ucMaterialOrderInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPlanOrderinfoPopup_T50.resx">
+      <DependentUpon>ucPlanOrderinfoPopup_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductPlanInfoPopup_T50.resx">
+      <DependentUpon>ucProductPlanInfoPopup_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTabletBasedSensorInfoPopup_T02.resx">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTabletBasedSensorInfoPopup_T01.resx">
+      <DependentUpon>ucTabletBasedSensorInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTabletBasedSensorInfoPopup.resx">
+      <DependentUpon>ucTabletBasedSensorInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPartCodePopup.resx">
+      <DependentUpon>ucPartCodePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCommonCodePopup.resx">
+      <DependentUpon>ucCommonCodePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DashboardHomeWidgets.resx">
+      <DependentUpon>DashboardHomeWidgets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMaterialOrderInfoPopup.resx">
+      <DependentUpon>ucMaterialOrderInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T01.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPlanOrderinfoPopup.resx">
+      <DependentUpon>ucPlanOrderinfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T02.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T03.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucNoticeDetailPopup.resx">
+      <DependentUpon>ucNoticeDetailPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucReversBOMInfoPopup.resx">
+      <DependentUpon>ucReversBOMInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup_T03.resx">
+      <DependentUpon>ucVendCodeInfoPopup_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup_T02.resx">
+      <DependentUpon>ucVendCodeInfoPopup_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup_T50.resx">
+      <DependentUpon>ucWorkOrderInfoPopup_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup.resx">
+      <DependentUpon>ucWorkOrderInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductPlanInfoPopup.resx">
+      <DependentUpon>ucProductPlanInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup_T01.resx">
+      <DependentUpon>ucVendCodeInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCodeInfoPopup.resx">
+      <DependentUpon>ucVendCodeInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendCostInfoPopup.resx">
+      <DependentUpon>ucVendCostInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkResultPopUp.resx">
+      <DependentUpon>ucWorkResultPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmCommonPopup.resx">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmImageView.resx">
+      <DependentUpon>frmImageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmPageSetting.resx">
+      <DependentUpon>frmPageSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmPdfView_DS.resx">
+      <DependentUpon>frmPdfView_DS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmPdfView.resx">
+      <DependentUpon>frmPdfView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmSheetSetting.resx">
+      <DependentUpon>frmSheetSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserForm\frmVerifyPermissions.resx">
+      <DependentUpon>frmVerifyPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmViewDesign.resx">
+      <DependentUpon>frmViewDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <Fakes Include="Fakes\DevExpress.XtraTreeMap.v17.2.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+    <None Include="Resources\alignhorizontalbottom_16x16.png" />
+    <None Include="Resources\alignhorizontaltop_16x16.png" />
+    <None Include="Resources\alignhorizontalcenter_16x16.png" />
+    <None Include="Resources\article_16x16.png" />
+    <None Include="Resources\article_16x161.png" />
+    <None Include="Resources\48x_back.png" />
+    <None Include="Resources\close_16x162.png" />
+    <None Include="Resources\bopermission_32x32.png" />
+    <None Include="Resources\apply_32x32.png" />
+    <None Include="Resources\close_32x32.png" />
+    <None Include="Resources\customizegrid_16x16.png" />
+    <Content Include="Resources\Default.png" />
+    <None Include="Resources\image_16x16.png" />
+    <Content Include="Resources\Ng.png" />
+    <Content Include="Resources\Ok.png" />
+    <None Include="Resources\paneloff_16x16.png" />
+    <None Include="Resources\saveto_16x16.png" />
+    <None Include="Resources\refresh_16x16.png" />
+    <Content Include="Resources\Standby.png" />
+    <Content Include="Resources\trash_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\CoFAS_MES\Dll
+copy $(TargetPath) $(SolutionDir)\CoFAS_MES.POP\Dll</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A21B8E4-EF51-4898-8D2E-EAD9D12C7132}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoFAS_MES.UI.QC</RootNamespace>
+    <AssemblyName>CoFAS_MES.UI.QC</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Diagram.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\CoFAS_MES\Dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\CoFAS_MES\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XMindAPI.LIB">
+      <HintPath>..\CoFAS_MES\Dll\XMindAPI.LIB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\QCBusiness.cs" />
+    <Compile Include="Data\QCProvider.cs" />
+    <Compile Include="Entity\QCEntity.cs" />
+    <Compile Include="UserControls\ucMatInspectDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMatInspectDocumentListPopup.Designer.cs">
+      <DependentUpon>ucMatInspectDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQCMaterialPartListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQCMaterialPartListPopup.Designer.cs">
+      <DependentUpon>ucQCMaterialPartListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SampleExcelView3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SampleExcelView3.Designer.cs">
+      <DependentUpon>SampleExcelView3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SampleExcelView2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SampleExcelView2.Designer.cs">
+      <DependentUpon>SampleExcelView2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SampleExcelView1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SampleExcelView1.Designer.cs">
+      <DependentUpon>SampleExcelView1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FBS.Designer.cs">
+      <DependentUpon>FBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EquipmentInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EquipmentInspectRegister.Designer.cs">
+      <DependentUpon>EquipmentInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\KPIDataRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\KPIDataRegister.Designer.cs">
+      <DependentUpon>KPIDataRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectStatus.Designer.cs">
+      <DependentUpon>FirstMiddleLastInspectStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister_T02.Designer.cs">
+      <DependentUpon>FirstMiddleLastInspectRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucInspectPartListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucInspectPartListPopup.Designer.cs">
+      <DependentUpon>ucInspectPartListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T08.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T08.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucImportInspectInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucImportInspectInfoPopup.Designer.cs">
+      <DependentUpon>ucImportInspectInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GatheringEquationRegister .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GatheringEquationRegister .Designer.cs">
+      <DependentUpon>GatheringEquationRegister .cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T09.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T08.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T07.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T06.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T05.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T04.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T03.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastItemRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastItemRegister.Designer.cs">
+      <DependentUpon>FirstMiddleLastItemRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManufacturingHistory_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManufacturingHistory_T01.Designer.cs">
+      <DependentUpon>ManufacturingHistory_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T03.Designer.cs">
+      <DependentUpon>MaterialInspectRegister_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T02.Designer.cs">
+      <DependentUpon>MaterialInspectRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QualityAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\QualityAnalysis.Designer.cs">
+      <DependentUpon>QualityAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ImportInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ImportInspectRegister.Designer.cs">
+      <DependentUpon>ImportInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister_T01.Designer.cs">
+      <DependentUpon>FirstMiddleLastInspectRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalendar.Designer.cs">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucInspectRequestInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucInspectRequestInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucInspectRequestInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BarcodeLabelPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BarcodeLabelPrint.Designer.cs">
+      <DependentUpon>BarcodeLabelPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FBDDataRegisterUpgrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FBDDataRegisterUpgrade.Designer.cs">
+      <DependentUpon>FBDDataRegisterUpgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T02.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister_T01.Designer.cs">
+      <DependentUpon>HACCPCheckRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\HACCPCheckRegister.Designer.cs">
+      <DependentUpon>HACCPCheckRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectFinalApprovalRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectFinalApprovalRegister_T01.Designer.cs">
+      <DependentUpon>InspectFinalApprovalRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QualityInspectStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\QualityInspectStatus.Designer.cs">
+      <DependentUpon>QualityInspectStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister_T01.Designer.cs">
+      <DependentUpon>MaterialInspectRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserForm\frmCommonPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.Designer.cs">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CCPDetectionRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CCPDetectionRegister.Designer.cs">
+      <DependentUpon>CCPDetectionRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CCPRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CCPRegister.Designer.cs">
+      <DependentUpon>CCPRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CheckDataRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CheckDataRegister.Designer.cs">
+      <DependentUpon>CheckDataRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CheckDataView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CheckDataView.Designer.cs">
+      <DependentUpon>CheckDataView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExcelFormDesignView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExcelFormDesignView.Designer.cs">
+      <DependentUpon>ExcelFormDesignView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectFinalApprovalRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectFinalApprovalRegister.Designer.cs">
+      <DependentUpon>InspectFinalApprovalRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManufacturingHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManufacturingHistory.Designer.cs">
+      <DependentUpon>ManufacturingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessTempManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessTempManagement.Designer.cs">
+      <DependentUpon>ProcessTempManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MaterialInspectRegister.Designer.cs">
+      <DependentUpon>MaterialInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MixingDegreeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MixingDegreeRegister.Designer.cs">
+      <DependentUpon>MixingDegreeRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductInspectRegister.Designer.cs">
+      <DependentUpon>ProductInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FirstMiddleLastInspectRegister.Designer.cs">
+      <DependentUpon>FirstMiddleLastInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductBadMonthStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductBadMonthStatus.Designer.cs">
+      <DependentUpon>ProductBadMonthStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RawMaterialInspectRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RawMaterialInspectRegister_T01.Designer.cs">
+      <DependentUpon>RawMaterialInspectRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SemiProductInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SemiProductInspectRegister.Designer.cs">
+      <DependentUpon>SemiProductInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RawMaterialInspectRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RawMaterialInspectRegister.Designer.cs">
+      <DependentUpon>RawMaterialInspectRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucInspectRequestInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucInspectRequestInfoPopup.Designer.cs">
+      <DependentUpon>ucInspectRequestInfoPopup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UserControls\ucCalendar.resx">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMatInspectDocumentListPopup.resx">
+      <DependentUpon>ucMatInspectDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucImportInspectInfoPopup.resx">
+      <DependentUpon>ucImportInspectInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucInspectRequestInfoPopup_T01.resx">
+      <DependentUpon>ucInspectRequestInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucInspectPartListPopup.resx">
+      <DependentUpon>ucInspectPartListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucQCMaterialPartListPopup.resx">
+      <DependentUpon>ucQCMaterialPartListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T08.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BarcodeLabelPrint.resx">
+      <DependentUpon>BarcodeLabelPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SampleExcelView3.resx">
+      <DependentUpon>SampleExcelView3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SampleExcelView2.resx">
+      <DependentUpon>SampleExcelView2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SampleExcelView1.resx">
+      <DependentUpon>SampleExcelView1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FBS.resx">
+      <DependentUpon>FBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EquipmentInspectRegister.resx">
+      <DependentUpon>EquipmentInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\KPIDataRegister.resx">
+      <DependentUpon>KPIDataRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FirstMiddleLastInspectRegister_T02.resx">
+      <DependentUpon>FirstMiddleLastInspectRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FirstMiddleLastInspectStatus.resx">
+      <DependentUpon>FirstMiddleLastInspectStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GatheringEquationRegister .resx">
+      <DependentUpon>GatheringEquationRegister .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T09.resx">
+      <DependentUpon>HACCPCheckRegister_T09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T08.resx">
+      <DependentUpon>HACCPCheckRegister_T08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T07.resx">
+      <DependentUpon>HACCPCheckRegister_T07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T06.resx">
+      <DependentUpon>HACCPCheckRegister_T06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T05.resx">
+      <DependentUpon>HACCPCheckRegister_T05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T04.resx">
+      <DependentUpon>HACCPCheckRegister_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T03.resx">
+      <DependentUpon>HACCPCheckRegister_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FirstMiddleLastItemRegister.resx">
+      <DependentUpon>FirstMiddleLastItemRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManufacturingHistory_T01.resx">
+      <DependentUpon>ManufacturingHistory_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MaterialInspectRegister_T03.resx">
+      <DependentUpon>MaterialInspectRegister_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MaterialInspectRegister_T02.resx">
+      <DependentUpon>MaterialInspectRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QualityAnalysis.resx">
+      <DependentUpon>QualityAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ImportInspectRegister.resx">
+      <DependentUpon>ImportInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FBDDataRegisterUpgrade.resx">
+      <DependentUpon>FBDDataRegisterUpgrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FirstMiddleLastInspectRegister_T01.resx">
+      <DependentUpon>FirstMiddleLastInspectRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T02.resx">
+      <DependentUpon>HACCPCheckRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister_T01.resx">
+      <DependentUpon>HACCPCheckRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\HACCPCheckRegister.resx">
+      <DependentUpon>HACCPCheckRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ucInspectRequestInfoPopup.resx">
+      <DependentUpon>ucInspectRequestInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmCommonPopup.resx">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CCPDetectionRegister.resx">
+      <DependentUpon>CCPDetectionRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CCPRegister.resx">
+      <DependentUpon>CCPRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CheckDataRegister.resx">
+      <DependentUpon>CheckDataRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CheckDataView.resx">
+      <DependentUpon>CheckDataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExcelFormDesignView.resx">
+      <DependentUpon>ExcelFormDesignView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectFinalApprovalRegister_T01.resx">
+      <DependentUpon>InspectFinalApprovalRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectFinalApprovalRegister.resx">
+      <DependentUpon>InspectFinalApprovalRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QualityInspectStatus.resx">
+      <DependentUpon>QualityInspectStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MaterialInspectRegister_T01.resx">
+      <DependentUpon>MaterialInspectRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManufacturingHistory.resx">
+      <DependentUpon>ManufacturingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessTempManagement.resx">
+      <DependentUpon>ProcessTempManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MaterialInspectRegister.resx">
+      <DependentUpon>MaterialInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MixingDegreeRegister.resx">
+      <DependentUpon>MixingDegreeRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductInspectRegister.resx">
+      <DependentUpon>ProductInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FirstMiddleLastInspectRegister.resx">
+      <DependentUpon>FirstMiddleLastInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductBadMonthStatus.resx">
+      <DependentUpon>ProductBadMonthStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RawMaterialInspectRegister_T01.resx">
+      <DependentUpon>RawMaterialInspectRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SemiProductInspectRegister.resx">
+      <DependentUpon>SemiProductInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RawMaterialInspectRegister.resx">
+      <DependentUpon>RawMaterialInspectRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoFAS_MES.CORE\CoFAS_MES.CORE.csproj">
+      <Project>{667c384e-14b0-4c27-a4ab-22e1dd9d0e41}</Project>
+      <Name>CoFAS_MES.CORE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoFAS_MES.UI.IM\CoFAS_MES.UI.IM.csproj">
+      <Project>{5B8AFB29-1F27-46BB-A26A-125DF6C355CA}</Project>
+      <Name>CoFAS_MES.UI.IM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+    <Content Include="Resources\close_16x162.png" />
+    <None Include="Resources\plug-Gray.png" />
+    <None Include="Resources\plug-Green.png" />
+    <None Include="Resources\print_16x162.png" />
+    <None Include="Resources\print_16x16.png" />
+    <Content Include="Resources\refresh_16x16.png" />
+    <None Include="Resources\request_16x16.png" />
+    <Content Include="Resources\saveto_16x16.png" />
+    <Content Include="Resources\save_16x16.png" />
+    <Content Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\CoFAS_MES\bin\Debug</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

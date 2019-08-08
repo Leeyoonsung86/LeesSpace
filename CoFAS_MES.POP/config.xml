@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes"?>
+<config>
+  <DBMS>
+    <OPTION>localhost</OPTION>
+    <!--MySql // SQLServer -->
+    <SERVER>localhost</SERVER>
+    <!--server IP // localhost  // db3.coever.co.kr-->
+    <PORT>3306</PORT>
+    <DATABASE>coever_mes</DATABASE>
+    <USER>dbmes</USER>
+    <PASS>0we11Passw0rd!@#dbmes</PASS>
+    <!--server Password NinomiyaHMI1! -->
+    <PROCESSNAME>COFASPOP</PROCESSNAME>
+  </DBMS>
+
+  <P_SET>
+    <!--Local use  : Y / N -->
+    <USE>N</USE>
+    <CORP_CODE>0313533074</CORP_CODE>
+    <GATHERING_DUBN>2000</GATHERING_DUBN>
+    <RESOURCE_CODE>RS0001</RESOURCE_CODE>
+    <RESOURCE_NAME>GATHERING서버</RESOURCE_NAME>
+    <RESOURCE_IP>192.168.0.1</RESOURCE_IP>
+    <RESOURCE_PORT>7705</RESOURCE_PORT>
+    <RESOURCE_INTERVAL>1000</RESOURCE_INTERVAL>
+    <RESOURCE_TYPE>1007</RESOURCE_TYPE>
+  </P_SET>
+
+  <IPC>
+    <!--공정 명-->
+    <TITLE>Data Gathering System</TITLE>
+  </IPC>
+
+  <GATHERINGDATA>
+    <MIN>500</MIN>
+    <MAX>1000</MAX>
+  </GATHERINGDATA>
+
+  <SERVERSOCKET>
+    <IP>192.168.0.1</IP>
+    <!-- Gathering Server IP Setting-->
+    <PORT>8704</PORT>
+  </SERVERSOCKET>
+
+  <CLIENTSOCKET>
+    <IP>192.168.0.151</IP>
+    <PORT>7788</PORT>
+    <USE>N</USE>
+  </CLIENTSOCKET>
+
+  <SENSORSETTING>
+    <SENSOR_IP>192.168.100.100</SENSOR_IP>
+  </SENSORSETTING>
+
+  <SCHEDULING>
+    <SCHEDUL_USE>Y</SCHEDUL_USE>
+  </SCHEDULING>
+
+  <MAIL>
+    <E-MAIL_ID>xxx@coever.co.kr</E-MAIL_ID>
+    <MAIL_SERVER_ID>m.coever.co.kr</MAIL_SERVER_ID>
+    <MAIL_ID>xxx</MAIL_ID>
+    <MAIL_PASS>1234</MAIL_PASS>
+    <MAIL_USE>N</MAIL_USE>
+  </MAIL>
+
+
+  <P_SET_SUB>
+    <RESOURCE_MST_CODE>RS0001</RESOURCE_MST_CODE>
+    <RESOURCE_CODE>RS00010001</RESOURCE_CODE>
+    <RESOURCE_NAME>센서1</RESOURCE_NAME>
+    <SENSOR_UNIT>1001</SENSOR_UNIT>
+    <IOT_CODE>1234567890</IOT_CODE>
+  </P_SET_SUB>
+
+  <P_SET_SUB>
+    <RESOURCE_MST_CODE>RS0002</RESOURCE_MST_CODE>
+    <RESOURCE_CODE>RS00010002</RESOURCE_CODE>
+    <RESOURCE_NAME>센서2</RESOURCE_NAME>
+    <SENSOR_UNIT>1002</SENSOR_UNIT>
+    <IOT_CODE>1234567890</IOT_CODE>
+  </P_SET_SUB>
+
+</config>

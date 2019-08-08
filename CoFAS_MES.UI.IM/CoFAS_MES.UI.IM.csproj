@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B8AFB29-1F27-46BB-A26A-125DF6C355CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoFAS_MES.UI.IM</RootNamespace>
+    <AssemblyName>CoFAS_MES.UI.IM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\IMBusiness.cs" />
+    <Compile Include="Data\IMProvider.cs" />
+    <Compile Include="Entity\IMEntity.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="UserControls\ucPartProcessMapping_Popup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPartProcessMapping_Popup_T01.Designer.cs">
+      <DependentUpon>ucPartProcessMapping_Popup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProRoutingDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProRoutingDocumentListPopup.designer.cs">
+      <DependentUpon>ucProRoutingDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucVendInfoDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucVendInfoDocumentListPopup.designer.cs">
+      <DependentUpon>ucVendInfoDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucToolDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucToolDocumentListPopup.designer.cs">
+      <DependentUpon>ucToolDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProcessDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProcessDocumentListPopup.designer.cs">
+      <DependentUpon>ucProcessDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderDocRegPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderDocRegPopup.Designer.cs">
+      <DependentUpon>ucWorkOrderDocRegPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmCategorySensorSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmCategorySensorSettings.Designer.cs">
+      <DependentUpon>frmCategorySensorSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmResourceMst_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmResourceMst_Popup.designer.cs">
+      <DependentUpon>frmResourceMst_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\ucContractInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserView\ucContractInfoPopup.Designer.cs">
+      <DependentUpon>ucContractInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DocumentInfoRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DocumentInfoRegister_T50.Designer.cs">
+      <DependentUpon>DocumentInfoRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DocumentInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DocumentInfoRegister.Designer.cs">
+      <DependentUpon>DocumentInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CommentInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CommentInfoRegister.Designer.cs">
+      <DependentUpon>CommentInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectProcessMappingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectProcessMappingRegister.Designer.cs">
+      <DependentUpon>InspectProcessMappingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\POP_NoticeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\POP_NoticeRegister.Designer.cs">
+      <DependentUpon>POP_NoticeRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T00.Designer.cs">
+      <DependentUpon>ProcessConfigurationRegister_T00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkSheetRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkSheetRegister_T50.Designer.cs">
+      <DependentUpon>WorkSheetRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T50.Designer.cs">
+      <DependentUpon>ProcessConfigurationRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessRoutingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessRoutingRegister.Designer.cs">
+      <DependentUpon>ProcessRoutingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PartMstDownLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PartMstDownLoad.Designer.cs">
+      <DependentUpon>PartMstDownLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TabletBasedSensorInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TabletBasedSensorInfoRegister.Designer.cs">
+      <DependentUpon>TabletBasedSensorInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PartInformationMappingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PartInformationMappingRegister.Designer.cs">
+      <DependentUpon>PartInformationMappingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NoticeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NoticeRegister.Designer.cs">
+      <DependentUpon>NoticeRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTerminalDetailInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTerminalDetailInfoPopup.Designer.cs">
+      <DependentUpon>ucTerminalDetailInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPartProcessMapping_Popup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPartProcessMapping_Popup.Designer.cs">
+      <DependentUpon>ucPartProcessMapping_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.designer.cs">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\ucResourceSensor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserView\ucResourceSensor.Designer.cs">
+      <DependentUpon>ucResourceSensor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BadCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BadCodeMstRegister.Designer.cs">
+      <DependentUpon>BadCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DataDictionary.Designer.cs">
+      <DependentUpon>DataDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EquipmentStopCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EquipmentStopCodeMstRegister.Designer.cs">
+      <DependentUpon>EquipmentStopCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BarcodePrintRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BarcodePrintRegister.Designer.cs">
+      <DependentUpon>BarcodePrintRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LabelCodeRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LabelCodeRegister.Designer.cs">
+      <DependentUpon>LabelCodeRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectCodeMstRegister.Designer.cs">
+      <DependentUpon>InspectCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectPartMappingRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectPartMappingRegister.Designer.cs">
+      <DependentUpon>InspectPartMappingRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessCodeMstRegister.Designer.cs">
+      <DependentUpon>ProcessCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister.Designer.cs">
+      <DependentUpon>ProcessConfigurationRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProcessConfigurationRegister_T01.Designer.cs">
+      <DependentUpon>ProcessConfigurationRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ResourceCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ResourceCodeMstRegister.Designer.cs">
+      <DependentUpon>ResourceCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RuleGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RuleGenerator.Designer.cs">
+      <DependentUpon>RuleGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RuleOptionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RuleOptionSetting.Designer.cs">
+      <DependentUpon>RuleOptionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TerminalInfoMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TerminalInfoMstRegister.Designer.cs">
+      <DependentUpon>TerminalInfoMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ToolInfoMstRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ToolInfoMstRegister_T01.Designer.cs">
+      <DependentUpon>ToolInfoMstRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ToolInfoMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ToolInfoMstRegister.Designer.cs">
+      <DependentUpon>ToolInfoMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GatheringInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GatheringInformation.Designer.cs">
+      <DependentUpon>GatheringInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VendorInformation_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VendorInformation_T01.Designer.cs">
+      <DependentUpon>VendorInformation_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\VendorInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\VendorInformation.Designer.cs">
+      <DependentUpon>VendorInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\WorkShopCodeMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkShopCodeMstRegister.Designer.cs">
+      <DependentUpon>WorkShopCodeMstRegister.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPartProcessMapping_Popup_T01.resx">
+      <DependentUpon>ucPartProcessMapping_Popup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProRoutingDocumentListPopup.resx">
+      <DependentUpon>ucProRoutingDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucVendInfoDocumentListPopup.resx">
+      <DependentUpon>ucVendInfoDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucToolDocumentListPopup.resx">
+      <DependentUpon>ucToolDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProcessDocumentListPopup.resx">
+      <DependentUpon>ucProcessDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderDocRegPopup.resx">
+      <DependentUpon>ucWorkOrderDocRegPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmCategorySensorSettings.resx">
+      <DependentUpon>frmCategorySensorSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmResourceMst_Popup.resx">
+      <DependentUpon>frmResourceMst_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DocumentInfoRegister_T50.resx">
+      <DependentUpon>DocumentInfoRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DocumentInfoRegister.resx">
+      <DependentUpon>DocumentInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CommentInfoRegister.resx">
+      <DependentUpon>CommentInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectProcessMappingRegister.resx">
+      <DependentUpon>InspectProcessMappingRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\POP_NoticeRegister.resx">
+      <DependentUpon>POP_NoticeRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessConfigurationRegister_T00.resx">
+      <DependentUpon>ProcessConfigurationRegister_T00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkSheetRegister_T50.resx">
+      <DependentUpon>WorkSheetRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessConfigurationRegister_T50.resx">
+      <DependentUpon>ProcessConfigurationRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessRoutingRegister.resx">
+      <DependentUpon>ProcessRoutingRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PartMstDownLoad.resx">
+      <DependentUpon>PartMstDownLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TabletBasedSensorInfoRegister.resx">
+      <DependentUpon>TabletBasedSensorInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PartInformationMappingRegister.resx">
+      <DependentUpon>PartInformationMappingRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NoticeRegister.resx">
+      <DependentUpon>NoticeRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTerminalDetailInfoPopup.resx">
+      <DependentUpon>ucTerminalDetailInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPartProcessMapping_Popup.resx">
+      <DependentUpon>ucPartProcessMapping_Popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmCommonPopup.resx">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserView\ucResourceSensor.resx">
+      <DependentUpon>ucResourceSensor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BadCodeMstRegister.resx">
+      <DependentUpon>BadCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DataDictionary.resx">
+      <DependentUpon>DataDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EquipmentStopCodeMstRegister.resx">
+      <DependentUpon>EquipmentStopCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BarcodePrintRegister.resx">
+      <DependentUpon>BarcodePrintRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LabelCodeRegister.resx">
+      <DependentUpon>LabelCodeRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectCodeMstRegister.resx">
+      <DependentUpon>InspectCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectPartMappingRegister.resx">
+      <DependentUpon>InspectPartMappingRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessCodeMstRegister.resx">
+      <DependentUpon>ProcessCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessConfigurationRegister.resx">
+      <DependentUpon>ProcessConfigurationRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProcessConfigurationRegister_T01.resx">
+      <DependentUpon>ProcessConfigurationRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ResourceCodeMstRegister.resx">
+      <DependentUpon>ResourceCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RuleGenerator.resx">
+      <DependentUpon>RuleGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RuleOptionSetting.resx">
+      <DependentUpon>RuleOptionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TerminalInfoMstRegister.resx">
+      <DependentUpon>TerminalInfoMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ToolInfoMstRegister_T01.resx">
+      <DependentUpon>ToolInfoMstRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ToolInfoMstRegister.resx">
+      <DependentUpon>ToolInfoMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GatheringInformation.resx">
+      <DependentUpon>GatheringInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VendorInformation_T01.resx">
+      <DependentUpon>VendorInformation_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\VendorInformation.resx">
+      <DependentUpon>VendorInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkShopCodeMstRegister.resx">
+      <DependentUpon>WorkShopCodeMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\additem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_search_16x16.png" />
+    <None Include="Resources\minus_32x32.png" />
+    <None Include="Resources\plus_32x32.png" />
+    <None Include="Resources\left_arrow_32x32.png" />
+    <None Include="Resources\right_arrow_32x32.png" />
+    <None Include="Resources\alarm_16x16.png" />
+    <Content Include="Resources\close_16x16.png" />
+    <None Include="Resources\saveto_16x16.png" />
+    <None Include="Resources\print_16x16.png" />
+    <None Include="Resources\close_16x162.png" />
+    <None Include="Resources\refresh_16x16.png" />
+    <None Include="Resources\plug-Green.png" />
+    <None Include="Resources\plug-Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoFAS_MES.CORE\CoFAS_MES.CORE.csproj">
+      <Project>{667c384e-14b0-4c27-a4ab-22e1dd9d0e41}</Project>
+      <Name>CoFAS_MES.CORE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\CoFAS_MES\bin\Debug</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

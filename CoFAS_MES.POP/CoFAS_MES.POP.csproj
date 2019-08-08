@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB294612-B22B-4DB6-A266-9C6A2AEDA906}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoFAS_MES.POP</RootNamespace>
+    <AssemblyName>CoFAS_MES.POP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Presets, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeMap.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\CoFAS_MES\Dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\POPSystemBusiness.cs" />
+    <Compile Include="Data\POPSystemProvider.cs" />
+    <Compile Include="Entity\POPSystemEntity.cs" />
+    <Compile Include="Form\DBInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DBInterface.Designer.cs">
+      <DependentUpon>DBInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\DQGathering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\DQGathering.Designer.cs">
+      <DependentUpon>DQGathering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmGatheringMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmGatheringMain.Designer.cs">
+      <DependentUpon>frmGatheringMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmImageView_buma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmImageView_buma.Designer.cs">
+      <DependentUpon>frmImageView_buma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmMainPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMainPrinter.Designer.cs">
+      <DependentUpon>frmMainPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPdfView_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPdfView_T50.Designer.cs">
+      <DependentUpon>frmPdfView_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPdfView_bumah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPdfView_bumah.Designer.cs">
+      <DependentUpon>frmPdfView_bumah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPBad_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPBad_T02.Designer.cs">
+      <DependentUpon>frmPOPBad_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPBad_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPBad_T01.Designer.cs">
+      <DependentUpon>frmPOPBad_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPFirstMiddleLast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPFirstMiddleLast.Designer.cs">
+      <DependentUpon>frmPOPFirstMiddleLast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPLabelPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPLabelPrint.Designer.cs">
+      <DependentUpon>frmPOPLabelPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_BIOCERRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_BIOCERRA.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCT_BIOCERRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_T51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_T51.Designer.cs">
+      <DependentUpon>frmPOPMain_T51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T51.Designer.cs">
+      <DependentUpon>frmPOPOrder_T51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPExcel.Designer.cs">
+      <DependentUpon>frmPOPExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPStop_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPStop_T01.Designer.cs">
+      <DependentUpon>frmPOPStop_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPEquipmentCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPEquipmentCheck.Designer.cs">
+      <DependentUpon>frmPOPEquipmentCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain.Designer.cs">
+      <DependentUpon>frmPOPMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRESS_LINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRESS_LINE.Designer.cs">
+      <DependentUpon>frmPOPMain_PRESS_LINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_T50.Designer.cs">
+      <DependentUpon>frmPOPMain_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_PACK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_PACK.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCT_PACK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPCheck.Designer.cs">
+      <DependentUpon>frmPOPCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPWorker_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPWorker_T50.Designer.cs">
+      <DependentUpon>frmPOPWorker_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T50.Designer.cs">
+      <DependentUpon>frmPOPOrder_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPProductMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPProductMonitoring.Designer.cs">
+      <DependentUpon>frmPOPProductMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T03.Designer.cs">
+      <DependentUpon>frmPOPOrder_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrderBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrderBOM.Designer.cs">
+      <DependentUpon>frmPOPOrderBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPCancel_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPCancel_T50.Designer.cs">
+      <DependentUpon>frmPOPCancel_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPResult_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPResult_T50.Designer.cs">
+      <DependentUpon>frmPOPResult_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPResult.Designer.cs">
+      <DependentUpon>frmPOPResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPBad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPBad.Designer.cs">
+      <DependentUpon>frmPOPBad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPDocument.Designer.cs">
+      <DependentUpon>frmPOPDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCTION.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_WEIGHING_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_WEIGHING_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_WEIGHING_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_MIX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_MIX.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCT_MIX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_SEMIPRODUCT_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_SEMIPRODUCT_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_SEMIPRODUCT_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPBOM.Designer.cs">
+      <DependentUpon>frmPOPBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T02.Designer.cs">
+      <DependentUpon>frmPOPOrder_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder_T01.Designer.cs">
+      <DependentUpon>frmPOPOrder_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPComplete.Designer.cs">
+      <DependentUpon>frmPOPComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T51.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T51.Designer.cs">
+      <DependentUpon>frmPOPLogin_T51.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T09.Designer.cs">
+      <DependentUpon>frmPOPLogin_T09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T08.Designer.cs">
+      <DependentUpon>frmPOPLogin_T08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T05.Designer.cs">
+      <DependentUpon>frmPOPLogin_T05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T04.Designer.cs">
+      <DependentUpon>frmPOPLogin_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T03.Designer.cs">
+      <DependentUpon>frmPOPLogin_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T02.Designer.cs">
+      <DependentUpon>frmPOPLogin_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGatherSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGatherSetting.Designer.cs">
+      <DependentUpon>frmGatherSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T07.Designer.cs">
+      <DependentUpon>frmPOPLogin_T07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T06.Designer.cs">
+      <DependentUpon>frmPOPLogin_T06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTABMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTABMain.Designer.cs">
+      <DependentUpon>frmTABMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\MS_DBClass.cs" />
+    <Compile Include="Popup\frmPOPDatecheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPDatecheck.Designer.cs">
+      <DependentUpon>frmPOPDatecheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPDP.Designer.cs">
+      <DependentUpon>frmPOPDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPDowntime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPDowntime.Designer.cs">
+      <DependentUpon>frmPOPDowntime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmTABEquipment_INSPECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmTABEquipment_INSPECT.Designer.cs">
+      <DependentUpon>frmTABEquipment_INSPECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPOX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPOX.Designer.cs">
+      <DependentUpon>frmPOPOX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPPartStockCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPPartStockCheck.Designer.cs">
+      <DependentUpon>frmPOPPartStockCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_SHIPMENT_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_SHIPMENT_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPSelect_SHIPMENT_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_MATERIAL_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_MATERIAL_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPSelect_MATERIAL_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_OUT_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_OUT_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_OUT_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_MATERIAL_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_MATERIAL_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_MATERIAL_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_PRODUCT_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_PRODUCT_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_RAWMATERIAL_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPMain_RAWMATERIAL_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPMain_RAWMATERIAL_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_INSPECT_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_INSPECT_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPSelect_INSPECT_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPOrder.Designer.cs">
+      <DependentUpon>frmPOPOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmPOPStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmPOPStop.Designer.cs">
+      <DependentUpon>frmPOPStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Gathering_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Gathering_Test.Designer.cs">
+      <DependentUpon>Gathering_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin_T01.Designer.cs">
+      <DependentUpon>frmPOPLogin_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPLogin.Designer.cs">
+      <DependentUpon>frmPOPLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPOPSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPOPSetting.Designer.cs">
+      <DependentUpon>frmPOPSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\modbusTCP.cs" />
+    <Compile Include="Popup\frmPOPSelect_WorkRequestDoc_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_WorkRequestDoc_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPSelect_WorkRequestDoc_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPInputSamplingQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPInputSamplingQty.Designer.cs">
+      <DependentUpon>frmPOPInputSamplingQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T04.Designer.cs">
+      <DependentUpon>frmPopupKeypad_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T03.Designer.cs">
+      <DependentUpon>frmPopupKeypad_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T02.Designer.cs">
+      <DependentUpon>frmPopupKeypad_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad_T01.Designer.cs">
+      <DependentUpon>frmPopupKeypad_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPopupKeypad.Designer.cs">
+      <DependentUpon>frmPopupKeypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_WorkOrderDoc_COSMETICS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPSelect_WorkOrderDoc_COSMETICS.Designer.cs">
+      <DependentUpon>frmPOPSelect_WorkOrderDoc_COSMETICS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPWeightValuePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPWeightValuePanel.Designer.cs">
+      <DependentUpon>frmPOPWeightValuePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popup\frmPOPWorkpage_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\frmPOPWorkpage_T50.Designer.cs">
+      <DependentUpon>frmPOPWorkpage_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Language.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="UserControls\ucTABEquipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABEquipment.Designer.cs">
+      <DependentUpon>ucTABEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTABSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABSearch.Designer.cs">
+      <DependentUpon>ucTABSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTABRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABRegister.Designer.cs">
+      <DependentUpon>ucTABRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTABLobby.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABLobby.Designer.cs">
+      <DependentUpon>ucTABLobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTABExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABExcel.Designer.cs">
+      <DependentUpon>ucTABExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucTABComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucTABComment.Designer.cs">
+      <DependentUpon>ucTABComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucGatheringCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucGatheringCtl.Designer.cs">
+      <DependentUpon>ucGatheringCtl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\DBInterface.resx">
+      <DependentUpon>DBInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\DQGathering.resx">
+      <DependentUpon>DQGathering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmGatheringMain.resx">
+      <DependentUpon>frmGatheringMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmImageView_buma.resx">
+      <DependentUpon>frmImageView_buma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMainPrinter.resx">
+      <DependentUpon>frmMainPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPdfView_T50.resx">
+      <DependentUpon>frmPdfView_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPdfView_bumah.resx">
+      <DependentUpon>frmPdfView_bumah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPBad_T02.resx">
+      <DependentUpon>frmPOPBad_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPBad_T01.resx">
+      <DependentUpon>frmPOPBad_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPFirstMiddleLast.resx">
+      <DependentUpon>frmPOPFirstMiddleLast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPLabelPrint.resx">
+      <DependentUpon>frmPOPLabelPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCT_BIOCERRA.resx">
+      <DependentUpon>frmPOPMain_PRODUCT_BIOCERRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_T51.resx">
+      <DependentUpon>frmPOPMain_T51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder_T51.resx">
+      <DependentUpon>frmPOPOrder_T51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPExcel.resx">
+      <DependentUpon>frmPOPExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPStop_T01.resx">
+      <DependentUpon>frmPOPStop_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPEquipmentCheck.resx">
+      <DependentUpon>frmPOPEquipmentCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain.resx">
+      <DependentUpon>frmPOPMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRESS_LINE.resx">
+      <DependentUpon>frmPOPMain_PRESS_LINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCT.resx">
+      <DependentUpon>frmPOPMain_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_T50.resx">
+      <DependentUpon>frmPOPMain_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCT_PACK.resx">
+      <DependentUpon>frmPOPMain_PRODUCT_PACK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPCheck.resx">
+      <DependentUpon>frmPOPCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPWorker_T50.resx">
+      <DependentUpon>frmPOPWorker_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder_T50.resx">
+      <DependentUpon>frmPOPOrder_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPProductMonitoring.resx">
+      <DependentUpon>frmPOPProductMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder_T03.resx">
+      <DependentUpon>frmPOPOrder_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrderBOM.resx">
+      <DependentUpon>frmPOPOrderBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPCancel_T50.resx">
+      <DependentUpon>frmPOPCancel_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPResult_T50.resx">
+      <DependentUpon>frmPOPResult_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPResult.resx">
+      <DependentUpon>frmPOPResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPBad.resx">
+      <DependentUpon>frmPOPBad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPDocument.resx">
+      <DependentUpon>frmPOPDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCTION.resx">
+      <DependentUpon>frmPOPMain_PRODUCTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_WEIGHING_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_WEIGHING_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCT_MIX.resx">
+      <DependentUpon>frmPOPMain_PRODUCT_MIX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_SEMIPRODUCT_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_SEMIPRODUCT_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPBOM.resx">
+      <DependentUpon>frmPOPBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder_T02.resx">
+      <DependentUpon>frmPOPOrder_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder_T01.resx">
+      <DependentUpon>frmPOPOrder_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPComplete.resx">
+      <DependentUpon>frmPOPComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T51.resx">
+      <DependentUpon>frmPOPLogin_T51.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T09.resx">
+      <DependentUpon>frmPOPLogin_T09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T08.resx">
+      <DependentUpon>frmPOPLogin_T08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T05.resx">
+      <DependentUpon>frmPOPLogin_T05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T04.resx">
+      <DependentUpon>frmPOPLogin_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T03.resx">
+      <DependentUpon>frmPOPLogin_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T02.resx">
+      <DependentUpon>frmPOPLogin_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGatherSetting.resx">
+      <DependentUpon>frmGatherSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T07.resx">
+      <DependentUpon>frmPOPLogin_T07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T06.resx">
+      <DependentUpon>frmPOPLogin_T06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTABMain.resx">
+      <DependentUpon>frmTABMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPDatecheck.resx">
+      <DependentUpon>frmPOPDatecheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPDP.resx">
+      <DependentUpon>frmPOPDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPDowntime.resx">
+      <DependentUpon>frmPOPDowntime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmTABEquipment_INSPECT.resx">
+      <DependentUpon>frmTABEquipment_INSPECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPOX.resx">
+      <DependentUpon>frmPOPOX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPPartStockCheck.resx">
+      <DependentUpon>frmPOPPartStockCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPSelect_SHIPMENT_COSMETICS.resx">
+      <DependentUpon>frmPOPSelect_SHIPMENT_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPSelect_MATERIAL_COSMETICS.resx">
+      <DependentUpon>frmPOPSelect_MATERIAL_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_OUT_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_OUT_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_MATERIAL_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_MATERIAL_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_PRODUCT_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_PRODUCT_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPMain_RAWMATERIAL_COSMETICS.resx">
+      <DependentUpon>frmPOPMain_RAWMATERIAL_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPSelect_INSPECT_COSMETICS.resx">
+      <DependentUpon>frmPOPSelect_INSPECT_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPOrder.resx">
+      <DependentUpon>frmPOPOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmPOPStop.resx">
+      <DependentUpon>frmPOPStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin_T01.resx">
+      <DependentUpon>frmPOPLogin_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPLogin.resx">
+      <DependentUpon>frmPOPLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPOPSetting.resx">
+      <DependentUpon>frmPOPSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPSelect_WorkRequestDoc_COSMETICS.resx">
+      <DependentUpon>frmPOPSelect_WorkRequestDoc_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPInputSamplingQty.resx">
+      <DependentUpon>frmPOPInputSamplingQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPopupKeypad_T04.resx">
+      <DependentUpon>frmPopupKeypad_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPopupKeypad_T03.resx">
+      <DependentUpon>frmPopupKeypad_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPopupKeypad_T02.resx">
+      <DependentUpon>frmPopupKeypad_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPopupKeypad_T01.resx">
+      <DependentUpon>frmPopupKeypad_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPopupKeypad.resx">
+      <DependentUpon>frmPopupKeypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPSelect_WorkOrderDoc_COSMETICS.resx">
+      <DependentUpon>frmPOPSelect_WorkOrderDoc_COSMETICS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPWeightValuePanel.resx">
+      <DependentUpon>frmPOPWeightValuePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\frmPOPWorkpage_T50.resx">
+      <DependentUpon>frmPOPWorkpage_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Language.en-US.resx" />
+    <EmbeddedResource Include="Resources\Language.ja-JP.resx" />
+    <EmbeddedResource Include="Resources\Language.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Language.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABEquipment.resx">
+      <DependentUpon>ucTABEquipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABSearch.resx">
+      <DependentUpon>ucTABSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABRegister.resx">
+      <DependentUpon>ucTABRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABLobby.resx">
+      <DependentUpon>ucTABLobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABExcel.resx">
+      <DependentUpon>ucTABExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucTABComment.resx">
+      <DependentUpon>ucTABComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucGatheringCtl.resx">
+      <DependentUpon>ucGatheringCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dll\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoFAS_MES.CORE\CoFAS_MES.CORE.csproj">
+      <Project>{667c384e-14b0-4c27-a4ab-22e1dd9d0e41}</Project>
+      <Name>CoFAS_MES.CORE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoFAS_MES.UI.PM\CoFAS_MES.UI.PM.csproj">
+      <Project>{16C48F9A-DDA0-42B1-B4C5-6F0D153C27A7}</Project>
+      <Name>CoFAS_MES.UI.PM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderpanel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newcustomers_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coever.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewdatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changetextcase_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerlocation_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edittask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1403074860_onebit_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_1403087969_Gnome-Document-Save-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_Bad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_Paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_ProductAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x_System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug-Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug-Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug-Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug-Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADown_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUp_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok2_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select_64x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Gathering.png" />
+    <None Include="Resources\128x128_euipment.png" />
+    <None Include="Resources\owell_logo.png" />
+    <None Include="Resources\128x128_upload.png" />
+    <None Include="Resources\128x128_search.png" />
+    <None Include="Resources\128x128_save.png" />
+    <None Include="Resources\128x128_refresh.png" />
+    <None Include="Resources\128x128_list.png" />
+    <None Include="Resources\128x128_import.png" />
+    <None Include="Resources\128x128_export.png" />
+    <None Include="Resources\128x128_excel.png" />
+    <None Include="Resources\128x128_comment.png" />
+    <None Include="Resources\process_icon.png" />
+    <None Include="Resources\NO_IMG_600x600.png" />
+    <None Include="Resources\print_32x32.png" />
+    <None Include="Resources\범아기전_CI_531x130.png" />
+    <None Include="Resources\print_16x162.png" />
+    <None Include="Resources\saveto_16x16.png" />
+    <None Include="Resources\request_48x48.png" />
+    <None Include="Resources\jobrequest_48x48.png" />
+    <None Include="Resources\joborder_48x48.png" />
+    <None Include="Resources\zoom_16x16.png" />
+    <None Include="Resources\refresh_16x16.png" />
+    <None Include="Resources\None.png" />
+    <None Include="Resources\technology_32x321.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT EXIST $(TargetDir)image (mkdir $(TargetDir)image.)
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

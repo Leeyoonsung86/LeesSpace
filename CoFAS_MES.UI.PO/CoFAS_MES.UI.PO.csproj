@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3CA428E-4508-4C6F-8B2F-EEB94798807E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoFAS_MES.UI.PO</RootNamespace>
+    <AssemblyName>CoFAS_MES.UI.PO</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Web, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Drawing, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.2.Wizard, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\CoFAS_MES\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoFAS_MES\Dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\POBusiness.cs" />
+    <Compile Include="Data\POProvider.cs" />
+    <Compile Include="Entity\POEntity.cs" />
+    <Compile Include="UserControls\ucInputSamplingResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucInputSamplingResult.Designer.cs">
+      <DependentUpon>ucInputSamplingResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCalendar.Designer.cs">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucOrderNumberInfoListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOrderNumberInfoListPopup.Designer.cs">
+      <DependentUpon>ucOrderNumberInfoListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucExcelViewPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucExcelViewPopup.Designer.cs">
+      <DependentUpon>ucExcelViewPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialUsagePartListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMaterialUsagePartListPopup.Designer.cs">
+      <DependentUpon>ucMaterialUsagePartListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucScheduling_T50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucScheduling_T50.Designer.cs">
+      <DependentUpon>ucScheduling_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucShipmentInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucShipmentInfoPopup.Designer.cs">
+      <DependentUpon>ucShipmentInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucOutsourcingInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOutsourcingInfoPopup.Designer.cs">
+      <DependentUpon>ucOutsourcingInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionPartListPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionPartListPopup_T01.Designer.cs">
+      <DependentUpon>ucProductionPartListPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanDocumentListPopup.Designer.cs">
+      <DependentUpon>ucProductPlanDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucContractDocumentListPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucContractDocumentListPopup.Designer.cs">
+      <DependentUpon>ucContractDocumentListPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPlanOrderinfoPopup_T01.Designer.cs">
+      <DependentUpon>ucPlanOrderinfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T07.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T07.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T06.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T06.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductPlanInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucProductPlanInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucOrderNumberInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucOrderNumberInfoPopup.Designer.cs">
+      <DependentUpon>ucOrderNumberInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMeterialUsagePopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMeterialUsagePopup.Designer.cs">
+      <DependentUpon>ucMeterialUsagePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T04.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T04.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T03.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T02.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucMakeNoMappingPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucMakeNoMappingPopup.Designer.cs">
+      <DependentUpon>ucMakeNoMappingPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T03.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T03.Designer.cs">
+      <DependentUpon>ucWorkResultPopUp_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T50.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T50.Designer.cs">
+      <DependentUpon>ucWorkResultPopUp_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T02.Designer.cs">
+      <DependentUpon>ucWorkResultPopUp_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Facility_Utilization_Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Facility_Utilization_Status.Designer.cs">
+      <DependentUpon>Facility_Utilization_Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductionResultState_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductionResultState_T50.Designer.cs">
+      <DependentUpon>ProductionResultState_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\JobResultStatus_NG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\JobResultStatus_NG.Designer.cs">
+      <DependentUpon>JobResultStatus_NG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T08.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductionStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductionStatus.Designer.cs">
+      <DependentUpon>ProductionStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultStatus_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultStatus_T01.Designer.cs">
+      <DependentUpon>WorkResultStatus_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T07.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T09.Designer.cs">
+      <DependentUpon>WorkResultRegister_T09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T08.Designer.cs">
+      <DependentUpon>WorkResultRegister_T08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T03.Designer.cs">
+      <DependentUpon>ProductMonitoring_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T50.Designer.cs">
+      <DependentUpon>ProductPlanRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductGoalMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductGoalMonth.Designer.cs">
+      <DependentUpon>ProductGoalMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Scheduling_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Scheduling_T50.Designer.cs">
+      <DependentUpon>Scheduling_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T02.Designer.cs">
+      <DependentUpon>ProductMonitoring_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutsourcingInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OutsourcingInfoRegister.Designer.cs">
+      <DependentUpon>OutsourcingInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductResultPlanStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductResultPlanStatus.Designer.cs">
+      <DependentUpon>ProductResultPlanStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductTimeMonthLive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductTimeMonthLive.Designer.cs">
+      <DependentUpon>ProductTimeMonthLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T02.Designer.cs">
+      <DependentUpon>ProductPlanRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister_T01.Designer.cs">
+      <DependentUpon>ProductPlanRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucWorkOrderDocRegPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderDocRegPopup.Designer.cs">
+      <DependentUpon>ucWorkOrderDocRegPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkRequestInfoPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkRequestInfoPopup.Designer.cs">
+      <DependentUpon>ucWorkRequestInfoPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T04.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucProductionOrderInfoPopup_T04.Designer.cs">
+      <DependentUpon>ucProductionOrderInfoPopup_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkOrderInfoPopup_T01.Designer.cs">
+      <DependentUpon>ucWorkOrderInfoPopup_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucWorkResultPopUp_T01.Designer.cs">
+      <DependentUpon>ucWorkResultPopUp_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\frmCommonPopup.Designer.cs">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ContractMstRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ContractMstRegister_T01.Designer.cs">
+      <DependentUpon>ContractMstRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ContractMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ContractMstRegister.Designer.cs">
+      <DependentUpon>ContractMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dyeing_ContractMstRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dyeing_ContractMstRegister.Designer.cs">
+      <DependentUpon>Dyeing_ContractMstRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dyeing_RecipeInformationRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dyeing_RecipeInformationRegister.Designer.cs">
+      <DependentUpon>Dyeing_RecipeInformationRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dyeing_WorkOrdersRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Dyeing_WorkOrdersRegister.Designer.cs">
+      <DependentUpon>Dyeing_WorkOrdersRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductMonitoring_T01.Designer.cs">
+      <DependentUpon>ProductMonitoring_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductMonitoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductMonitoring.Designer.cs">
+      <DependentUpon>ProductMonitoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\JobResultRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\JobResultRegister.Designer.cs">
+      <DependentUpon>JobResultRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductPlanMonthStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductPlanMonthStatus.Designer.cs">
+      <DependentUpon>ProductPlanMonthStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LotManagementStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LotManagementStatus.Designer.cs">
+      <DependentUpon>LotManagementStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T50.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T02.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkReadingStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkReadingStatus.Designer.cs">
+      <DependentUpon>WorkReadingStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkRequestRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkRequestRegister.Designer.cs">
+      <DependentUpon>WorkRequestRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductResultHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductResultHistory.Designer.cs">
+      <DependentUpon>ProductResultHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ResultStatusProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ResultStatusProduct.Designer.cs">
+      <DependentUpon>ResultStatusProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ResultStatusData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ResultStatusData.Designer.cs">
+      <DependentUpon>ResultStatusData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ResultStatusPlanResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ResultStatusPlanResult.Designer.cs">
+      <DependentUpon>ResultStatusPlanResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NgResultRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NgResultRegister.Designer.cs">
+      <DependentUpon>NgResultRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PlanResult_JobResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PlanResult_JobResult.Designer.cs">
+      <DependentUpon>PlanResult_JobResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductPlanRegister.Designer.cs">
+      <DependentUpon>ProductPlanRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WIPManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WIPManagement.Designer.cs">
+      <DependentUpon>WIPManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T01.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister.Designer.cs">
+      <DependentUpon>WorkOrdersRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T50.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T50.Designer.cs">
+      <DependentUpon>WorkResultRegister_T50.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T06.Designer.cs">
+      <DependentUpon>WorkResultRegister_T06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T05.Designer.cs">
+      <DependentUpon>WorkResultRegister_T05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T04.Designer.cs">
+      <DependentUpon>WorkResultRegister_T04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T03.Designer.cs">
+      <DependentUpon>WorkResultRegister_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T01.Designer.cs">
+      <DependentUpon>WorkResultRegister_T01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister.Designer.cs">
+      <DependentUpon>WorkResultRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T03.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T02.Designer.cs">
+      <DependentUpon>WorkResultRegister_T02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkOrdersRegister_T06.Designer.cs">
+      <DependentUpon>WorkOrdersRegister_T06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WorkResultRegister_T07.Designer.cs">
+      <DependentUpon>WorkResultRegister_T07.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\ucInputSamplingResult.resx">
+      <DependentUpon>ucInputSamplingResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucCalendar.resx">
+      <DependentUpon>ucCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOrderNumberInfoListPopup.resx">
+      <DependentUpon>ucOrderNumberInfoListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucExcelViewPopup.resx">
+      <DependentUpon>ucExcelViewPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T06.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMaterialUsagePartListPopup.resx">
+      <DependentUpon>ucMaterialUsagePartListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucScheduling_T50.resx">
+      <DependentUpon>ucScheduling_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucShipmentInfoPopup.resx">
+      <DependentUpon>ucShipmentInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOutsourcingInfoPopup.resx">
+      <DependentUpon>ucOutsourcingInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionPartListPopup_T01.resx">
+      <DependentUpon>ucProductionPartListPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductPlanDocumentListPopup.resx">
+      <DependentUpon>ucProductPlanDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucContractDocumentListPopup.resx">
+      <DependentUpon>ucContractDocumentListPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T07.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductPlanInfoPopup_T01.resx">
+      <DependentUpon>ucProductPlanInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderDocRegPopup.resx">
+      <DependentUpon>ucWorkOrderDocRegPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucOrderNumberInfoPopup.resx">
+      <DependentUpon>ucOrderNumberInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMeterialUsagePopup.resx">
+      <DependentUpon>ucMeterialUsagePopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup_T04.resx">
+      <DependentUpon>ucWorkOrderInfoPopup_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup_T03.resx">
+      <DependentUpon>ucWorkOrderInfoPopup_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup_T02.resx">
+      <DependentUpon>ucWorkOrderInfoPopup_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucMakeNoMappingPopup.resx">
+      <DependentUpon>ucMakeNoMappingPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkRequestInfoPopup.resx">
+      <DependentUpon>ucWorkRequestInfoPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucProductionOrderInfoPopup_T04.resx">
+      <DependentUpon>ucProductionOrderInfoPopup_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkOrderInfoPopup_T01.resx">
+      <DependentUpon>ucWorkOrderInfoPopup_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkResultPopUp_T01.resx">
+      <DependentUpon>ucWorkResultPopUp_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkResultPopUp_T50.resx">
+      <DependentUpon>ucWorkResultPopUp_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucWorkResultPopUp_T02.resx">
+      <DependentUpon>ucWorkResultPopUp_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\frmCommonPopup.resx">
+      <DependentUpon>frmCommonPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Facility_Utilization_Status.resx">
+      <DependentUpon>Facility_Utilization_Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductionResultState_T50.resx">
+      <DependentUpon>ProductionResultState_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\JobResultStatus_NG.resx">
+      <DependentUpon>JobResultStatus_NG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T08.resx">
+      <DependentUpon>WorkOrdersRegister_T08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T07.resx">
+      <DependentUpon>WorkResultRegister_T07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductionStatus.resx">
+      <DependentUpon>ProductionStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultStatus_T01.resx">
+      <DependentUpon>WorkResultStatus_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T07.resx">
+      <DependentUpon>WorkOrdersRegister_T07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T09.resx">
+      <DependentUpon>WorkResultRegister_T09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T08.resx">
+      <DependentUpon>WorkResultRegister_T08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductMonitoring_T03.resx">
+      <DependentUpon>ProductMonitoring_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductPlanRegister_T50.resx">
+      <DependentUpon>ProductPlanRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductGoalMonth.resx">
+      <DependentUpon>ProductGoalMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Scheduling_T50.resx">
+      <DependentUpon>Scheduling_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductMonitoring_T02.resx">
+      <DependentUpon>ProductMonitoring_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OutsourcingInfoRegister.resx">
+      <DependentUpon>OutsourcingInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ContractMstRegister_T01.resx">
+      <DependentUpon>ContractMstRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ContractMstRegister.resx">
+      <DependentUpon>ContractMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dyeing_ContractMstRegister.resx">
+      <DependentUpon>Dyeing_ContractMstRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dyeing_RecipeInformationRegister.resx">
+      <DependentUpon>Dyeing_RecipeInformationRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Dyeing_WorkOrdersRegister.resx">
+      <DependentUpon>Dyeing_WorkOrdersRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductMonitoring_T01.resx">
+      <DependentUpon>ProductMonitoring_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductMonitoring.resx">
+      <DependentUpon>ProductMonitoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\JobResultRegister.resx">
+      <DependentUpon>JobResultRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductPlanRegister_T01.resx">
+      <DependentUpon>ProductPlanRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductResultPlanStatus.resx">
+      <DependentUpon>ProductResultPlanStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductTimeMonthLive.resx">
+      <DependentUpon>ProductTimeMonthLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductPlanRegister_T02.resx">
+      <DependentUpon>ProductPlanRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductPlanMonthStatus.resx">
+      <DependentUpon>ProductPlanMonthStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LotManagementStatus.resx">
+      <DependentUpon>LotManagementStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T06.resx">
+      <DependentUpon>WorkOrdersRegister_T06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T50.resx">
+      <DependentUpon>WorkOrdersRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T02.resx">
+      <DependentUpon>WorkOrdersRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T03.resx">
+      <DependentUpon>WorkOrdersRegister_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkReadingStatus.resx">
+      <DependentUpon>WorkReadingStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkRequestRegister.resx">
+      <DependentUpon>WorkRequestRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductResultHistory.resx">
+      <DependentUpon>ProductResultHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ResultStatusProduct.resx">
+      <DependentUpon>ResultStatusProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ResultStatusData.resx">
+      <DependentUpon>ResultStatusData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ResultStatusPlanResult.resx">
+      <DependentUpon>ResultStatusPlanResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NgResultRegister.resx">
+      <DependentUpon>NgResultRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PlanResult_JobResult.resx">
+      <DependentUpon>PlanResult_JobResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductPlanRegister.resx">
+      <DependentUpon>ProductPlanRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WIPManagement.resx">
+      <DependentUpon>WIPManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister_T01.resx">
+      <DependentUpon>WorkOrdersRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkOrdersRegister.resx">
+      <DependentUpon>WorkOrdersRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T50.resx">
+      <DependentUpon>WorkResultRegister_T50.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T06.resx">
+      <DependentUpon>WorkResultRegister_T06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T05.resx">
+      <DependentUpon>WorkResultRegister_T05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T04.resx">
+      <DependentUpon>WorkResultRegister_T04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T03.resx">
+      <DependentUpon>WorkResultRegister_T03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T01.resx">
+      <DependentUpon>WorkResultRegister_T01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister.resx">
+      <DependentUpon>WorkResultRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WorkResultRegister_T02.resx">
+      <DependentUpon>WorkResultRegister_T02.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoFAS_MES.CORE\CoFAS_MES.CORE.csproj">
+      <Project>{667c384e-14b0-4c27-a4ab-22e1dd9d0e41}</Project>
+      <Name>CoFAS_MES.CORE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+    <None Include="Resources\24x_delete.png" />
+    <None Include="Resources\24x_down.png" />
+    <None Include="Resources\24x_up.png" />
+    <Content Include="Resources\close_16x162.png" />
+    <None Include="Resources\jobrequest_16x16.png" />
+    <None Include="Resources\joborder_16x162.png" />
+    <None Include="Resources\print_16x16.png" />
+    <Content Include="Resources\refresh_16x16.png" />
+    <None Include="Resources\saveto_16x16.png" />
+    <None Include="Resources\request_16x16.png" />
+    <None Include="Resources\save_16x16.png" />
+    <Content Include="Resources\zoom_16x16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) $(SolutionDir)\CoFAS_MES\bin\Debug</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

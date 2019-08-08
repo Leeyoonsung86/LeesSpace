@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CoFAS_MES.AUTO.DWL.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DB_TYPE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MySql</Value>
+    </Setting>
+    <Setting Name="SERVER_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">m.coever.co.kr</Value>
+    </Setting>
+    <Setting Name="DB_NAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">coever_systemdownload</Value>
+    </Setting>
+    <Setting Name="DB_ID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">coever_admin</Value>
+    </Setting>
+    <Setting Name="CORP_CODE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9999999999</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
